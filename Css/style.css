@@ -1,3 +1,4 @@
+a {text-decoration: none;}
 /********** Template CSS **********/
 :root {
     --primary: #00B98E;
@@ -15,6 +16,12 @@
 }
 
 
+.bg-primary{
+    background: var(--primary) !important;
+    color: #fff;
+}
+
+.text-color{color: var(--primary);}
 /*** Spinner ***/
 #spinner {
     opacity: 0;
@@ -68,12 +75,39 @@
 
 
 /*** Navbar ***/
+
+#top-nav {
+  height: 30px;
+  background-color: var(--primary);
+}
+
+.nav-links li {
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 12px;
+}
+
+.nav-links li:last-child {
+  margin-right: 0px;
+}
+
+.nav-links li a {
+  color: #FFF;
+
+}
+
+.nav-links li a:hover {
+  color: var(--dark);
+}
+
+
 .nav-bar {
     position: relative;
     padding: 0 3rem;
     transition: .5s;
     z-index: 9999;
-    
+    border-bottom: 2px solid var(--primary);
+    margin-bottom: 5px;
 }
 .logotext{
     color: var(--primary);
@@ -83,6 +117,12 @@
     position: sticky;
     padding: 0;
     z-index: 9999;
+}
+
+.top-nav{
+    width: 100% ;
+    height: 30px;
+    background-color: var(--primary);
 }
 
 .navbar {
@@ -165,11 +205,6 @@
 
 
 /*** Header ***/
-@media (min-width: 992px) {
-    .header {
-        margin-top: -120px;
-    }
-}
 
 .header-carousel .owl-nav {
     position: absolute;
@@ -381,6 +416,34 @@
 .slogan {
     font-size: 25px;
 }
+
+.typing {
+    width: 20ch;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: "Philosopher", sans-serif;
+    font-weight: bold;
+    position: absolute;
+    animation: typing 8s steps(20) infinite, blink 0.5s step-end infinite;
+    border-right: 1px solid;
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    27% {
+        width: 20ch;
+    }
+    72% {
+        width: 20ch;
+    }
+    100% {
+        width: 0;
+        
+    }
+}
+
 
 /*** Footer ***/
 .footer .btn.btn-social {
