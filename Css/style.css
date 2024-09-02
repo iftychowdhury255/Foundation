@@ -369,6 +369,9 @@
     background: var(--dark);
 }
 
+/*** home fast part ***/
+
+.slogan span {color: var(--primary) !important;}
 
 /*** Footer ***/
 .footer .btn.btn-social {
