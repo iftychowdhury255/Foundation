@@ -190,6 +190,12 @@ a {text-decoration: none;}
     }
 }
 
+/* <!-- owl carousel Start --> */
+
+.img-carousel{
+    height: 300px;
+}
+
 
 /*** Icon ***/
 .icon {
