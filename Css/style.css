@@ -227,6 +227,17 @@ a {text-decoration: none;}
     z-index: 1;
 }
 
+/* contact start */
+.contact_header{
+    text-align: center;
+    font-weight: bold;
+}
+.contact_subtitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* contact end */
 
 /*** Category ***/
 .cat-item div {
