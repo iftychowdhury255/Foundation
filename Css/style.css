@@ -191,48 +191,6 @@ a {text-decoration: none;}
 }
 
 
-/*** Header ***/
-
-.header-carousel .owl-nav {
-    position: absolute;
-    top: 50%;
-    left: -25px;
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
-}
-
-.header-carousel .owl-nav .owl-prev,
-.header-carousel .owl-nav .owl-next {
-    margin: 7px 0;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #FFFFFF;
-    background: var(--primary);
-    border-radius: 40px;
-    font-size: 20px;
-    transition: .5s;
-}
-
-.header-carousel .owl-nav .owl-prev:hover,
-.header-carousel .owl-nav .owl-next:hover {
-    background: var(--dark);
-}
-
-@media (max-width: 768px) {
-    .header-carousel .owl-nav {
-        left: 25px;
-    }
-}
-
-.breadcrumb-item + .breadcrumb-item::before {
-    color: #DDDDDD;
-}
-
-
 /*** Icon ***/
 .icon {
     padding: 15px;
@@ -396,12 +354,27 @@ a {text-decoration: none;}
 
 /*** home fast part ***/
 
+.foundation-name{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bold;
+}
+
 .foundation-name span {
+    text-transform: uppercase;
     color: var(--primary) !important;
 }
 
 .slogan {
     font-size: 25px;
+}
+
+.typing-wrapper {
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    height: 100%;            
+    position: relative;       
 }
 
 .typing {
@@ -411,9 +384,11 @@ a {text-decoration: none;}
     font-family: "Philosopher", sans-serif;
     font-weight: bold;
     position: absolute;
+    top: 100px;
     animation: typing 8s steps(20) infinite, blink 0.5s step-end infinite;
     border-right: 1px solid;
 }
+
 
 @keyframes typing {
     0% {
@@ -431,6 +406,11 @@ a {text-decoration: none;}
     }
 }
 
+@media (max-width: 768px) {
+    .foundation-name,.slogan{
+        font-size: 20px;
+    }
+}
 
 /*** Footer ***/
 .footer .btn.btn-social {
